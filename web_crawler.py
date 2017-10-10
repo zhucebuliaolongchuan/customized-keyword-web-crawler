@@ -16,6 +16,7 @@ import time
 import socket
 import ssl
 
+# This class serves to handle a url object, including the initial PageRank, final PageRank, accessed time, status code, etc.
 class Urls(object):
     def __init__(self, url):
         self.url = url
@@ -82,7 +83,7 @@ class Urls(object):
     def get_content_length(self):
         return self.content_length
 
-
+# This class serves to handle a crawler object. Including the attributes of a crawler should have and also the operations that need to do during the crawling
 class Crawler(object):
     def __init__(self, query, num):
         """
@@ -466,14 +467,10 @@ class Crawler(object):
         f.close()
 
 
-# This class serves to an object to handle the status of each url:estimated PageRank, finalPageRank, accessed or not
 def main():
-    # web_crawler = Crawler("knuckle sandwich", 10)
     web_crawler = Crawler("ebbets field", 10)
     web_crawler.bfs_spider(10, 1000)
     # web_crawler.page_rank_spider(8, 10, 1000)
-#    web_crawler_2 = Crawler("knuckle sandwich", 10)
- #   web_crawler_2.bfs_spider(10, 1500)
 
 
 if __name__ == '__main__':
