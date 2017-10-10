@@ -5,7 +5,7 @@
 	```The file name is named in this format: <Query>_<Spider>_Spider_Results.xls```
   2. 1 Python File: This file contains all the source code for this project. There are around 470 lines including comments.
   3. 2 Bloomfilter Files: These two files are used to check the same content file that accessed before using Bloomfilter method. But they are the output files by the program. Please do not use them when you re-run the program. It might cause 		the program would detect the content that have crawler last time.
-======
+------
 #### How to Compile
 	1. Language Version: Python 2.7.14
 	2. Dependencies: There are three dependencies at all: BeautifulSoup4, Google, BloomFilter. If you are not make sure whether you have installed the above three python modules, please type the following three commands to install the dependencies.
@@ -15,7 +15,7 @@
 	3. Two ways to compile this program:
 					 * Type "python web_crawler.py" to the terminal 
 					 * Use other Python IDE(such as PyCharm) is also well
-======
+------
 #### Before Runtime
 	1. Simply customize the parameters that you want in the def main() function
 		  Initialize one Crawler instance, such as: web_crawler = Crawler("knuckle sandwich", 10)
