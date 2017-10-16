@@ -29,7 +29,7 @@
   1. Simply customize the parameters that you want in the def main() function
 	Initialize one Crawler instance, such as: web_crawler = Crawler("knuckle sandwich", 10)
 	The first parameter is the item you want to query, the second item is the start pages you want to get from the google api
-					* Customize your own spider
+	* Customize your own spider
 						* customize the BFS spider, such as: web_crawler.bfs_spider(8, 1000)
 							* The first parameter means the max pages that you want to extract from one single page
 							* The second parameter means the maximum pages that you want to crawl at this time
