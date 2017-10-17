@@ -29,13 +29,12 @@
   1. Simply customize the parameters that you want in the def main() function
 	Initialize one Crawler instance, such as: web_crawler = Crawler("knuckle sandwich", 10)
 	The first parameter is the item you want to query, the second item is the start pages you want to get from the google api
-	* Customize your own spider
-						* customize the BFS spider, such as: web_crawler.bfs_spider(8, 1000)
-							* The first parameter means the max pages that you want to extract from one single page
-							* The second parameter means the maximum pages that you want to crawl at this time
-    					* customize the PageRank spider: web_crawler.page_rank_spider(10, 10, 20)
-    						* The first parameter means the max pages that you want to extract from one single page
-    						* The second parameter means the timer you want to setup that to update the PageRanks periodically
-    							* Please note that, do not set this value too small, since it will update the PageRanks frequently, and also do not set too big, since the spider would stop the jobs if the priority queue is empty
-    						* The third parameter means the maximum pages that you want to crawl at this time
+	Customize your own spider
+		customize the BFS spider, such as: web_crawler.bfs_spider(8, 1000)
+			The first parameter means the max pages that you want to extract from one single page
+			The second parameter means the maximum pages that you want to crawl at this time
+    		customize the PageRank spider: web_crawler.page_rank_spider(10, 10, 20)
+    			The first parameter means the max pages that you want to extract from one single page
+    			The second parameter means the timer you want to setup that to update the PageRanks periodically
+    	Please note that, do not set this value too small, since it will update the PageRanks frequently, and also do not set too big, since the spider would stop the jobs if the priority queue is empty. The third parameter means the maximum pages that you want to crawl at this time
     2. Then run the program with the terminal or by Python IDE!
