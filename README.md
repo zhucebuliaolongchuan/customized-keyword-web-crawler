@@ -1,4 +1,4 @@
-## A General Purpose Web Crawler based on PageRank
+## A Customized Keyword Web Crawler based on PageRank
 
 ### Stucture of Files
 - **Output Logs:** Two queries with two different spiders, which are BFS spider and PageRank spider, so there are four files. Please note that, to make the output results well format, I output the results as an excel file.
